@@ -5,8 +5,12 @@ import java.util.Date;
 
 public class task {
 
-    Date dueTimeDate = Calendar.getInstance().getTime();
-    Date createdTimeDate = Calendar.getInstance().getTime();
+    Date dueTimeDate;
+    Date createdTimeDate;
+    String choreTitle;
+    String choreDescription;
+
+
 
 
 
