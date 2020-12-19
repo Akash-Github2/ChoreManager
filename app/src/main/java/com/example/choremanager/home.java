@@ -17,16 +17,21 @@ import java.util.ArrayList;
 
 public class home extends Fragment {
 
-    private ArrayList<String> items;
-    private ArrayAdapter<String> itemsAdapter;
-    private ListView listview ;
+    public home() {
+        //Required empty constructor
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        listview =  view.findViewById(R.id.listView);
-        itemsAdapter.add("Do DA DISHES");
+        String[] items = {"Hello", "hi"};
+
+        ListView listView = (ListView) view.findViewById(R.id.listView);
+
+        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(getActivity(),android.R.layout.simple_list_item_1, items);
+
+        listView.setAdapter(itemsAdapter);
 
         return view;
     }
