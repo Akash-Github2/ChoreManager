@@ -9,11 +9,13 @@ import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import java.io.File;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
 public class MainActivity extends AppCompatActivity {
     //Initalize variable
+    File choreData = new File(context.getFilesDir(), chore);
     BottomNavigationView bottomNavigationView;
     Deque<Integer> integerDeque = new ArrayDeque<>(4);
     boolean flag = true;

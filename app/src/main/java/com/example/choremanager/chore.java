@@ -1,15 +1,13 @@
 package com.example.choremanager;
 
-import java.util.Calendar;
 import java.util.Date;
 
 public class chore {
-
-    Date dueTimeDate;
-    Date createdTimeDate;
-    String choreTitle;
-    String choreDescription;
-    boolean isCompleted;
+    private Date dueTimeDate;
+    private Date createdTimeDate;
+    private String choreTitle;
+    private String choreDescription;
+    private boolean isCompleted;
 
     public chore(Date dueTimeDate, Date createdTimeDate, String choreTitle, String choreDescription, boolean isCompleted) {
         this.dueTimeDate = dueTimeDate;
