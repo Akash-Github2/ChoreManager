@@ -1,14 +1,150 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/createTask"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
     tools:context=".addChore">
-
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/newChoreTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/avenirbold"
+        android:text="New Chore"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/createChore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="670dp"
+        android:layout_marginStart="130dp"
+        android:text="Create" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/taskName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="Task Name: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="-350dp"
+        android:textSize="17sp"
+        />
+    <EditText
+    android:id="@+id/insertTask"
+    android:layout_width="165dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:ems="10"
+    android:inputType="textPersonName"
+    android:layout_marginTop="75dp"
+        />
+    <TextView
+        android:id="@+id/day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="Days: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_marginTop="105dp"
+        android:layout_marginStart="-287dp"
+        android:textSize="17sp"
+        />
+
+    <CheckBox
+        android:id="@+id/dayCheck1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:checked="false"
+        android:text="S"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="-25dp"
+        />
+
+    <CheckBox
+        android:id="@+id/dayCheck2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:checked="false"
+        android:text="M"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="-35dp"
+        />
+
+
+
+    <CheckBox
+        android:id="@+id/dayCheck3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:checked="false"
+        android:text="T"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="-35dp"
+        />
+
+    <CheckBox
+        android:id="@+id/dayCheck4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:checked="false"
+        android:text="W"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="-35dp"
+        />
+    <CheckBox
+        android:id="@+id/dayCheck5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:checked="false"
+        android:text="T"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="-35dp"
+        />
+    <CheckBox
+        android:id="@+id/dayCheck6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:checked="false"
+        android:text="F"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="-35dp"
+        />
+    <CheckBox
+        android:id="@+id/dayCheck7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:checked="false"
+        android:text="S"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="-35dp"
+        />
+    <ImageView
+        android:id="@+id/cancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@android:drawable/btn_dialog"
+        android:layout_marginRight="-15dp"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+</LinearLayout>
