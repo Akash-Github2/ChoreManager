@@ -14,6 +14,7 @@
         android:layout_height="wrap_content"
         android:text="Calendar"
         android:layout_marginLeft="20dp"
+        android:textColor= '#000'
         android:layout_marginTop="20dp"
         android:fontFamily="@font/avenirbold"
         android:textSize="30sp"
