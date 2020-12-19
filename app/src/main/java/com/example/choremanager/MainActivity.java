@@ -119,8 +119,8 @@ public class MainActivity extends AppCompatActivity {
             loadFragment(getFragment(integerDeque.peek()));
         }else {
             finish();
-        }*/
+        }
 
 
-    }
+    }*/
 }
