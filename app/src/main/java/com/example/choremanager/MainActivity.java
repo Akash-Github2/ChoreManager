@@ -15,7 +15,7 @@ import java.util.Deque;
 
 public class MainActivity extends AppCompatActivity {
     //Initalize variable
-    File choreData = new File(context.getFilesDir(), chore);
+    //File choreData = new File(context.getFilesDir(), chore);
     BottomNavigationView bottomNavigationView;
     Deque<Integer> integerDeque = new ArrayDeque<>(4);
     boolean flag = true;
@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
                 .commit();
     }
 
-    @Override
+    /*@Override
     public void onBackPressed() {
         //Pop to previous fragment
         integerDeque.pop();
@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
             loadFragment(getFragment(integerDeque.peek()));
         }else {
             finish();
-        }
+        }*/
 
 
     }
