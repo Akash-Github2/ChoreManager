@@ -8,6 +8,5 @@ public class DataModel {
     DataModel(String name, boolean checked) {
         this.name = name;
         this.checked = checked;
-
     }
 }
