@@ -56,6 +56,10 @@ public class addChore extends Fragment {
 
     }
 
+    public home goBack(View view){
+        return new home();
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
