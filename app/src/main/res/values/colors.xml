@@ -4,6 +4,9 @@
     <color name="colorPrimaryDark">#BABABA</color>
     <color name="colorAccent">#0088ff</color>
 
+    <color name="colorBlack">#000</color>
+    <color name="colorWhite">#fff</color>
+
     <color name="colorAccentBlue">#0088ff</color>
     <color name="colorAccentRed">#fc4d55</color>
     <color name="colorAccentYellow">#ffc107</color>
