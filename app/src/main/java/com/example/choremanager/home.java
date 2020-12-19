@@ -30,7 +30,7 @@ public class home extends Fragment {
 
         dataModels = new ArrayList<>();
 
-        dataModels.add(new DataModel("Eat Apple Pie", false));
+        dataModels.add(new DataModel("Eat Apple Pie Eat Apple Pie Eat Apple Pie Eat Apple Pie Eat Apple Pie Eat Apple Pie Eat Apple Pie Eat Apple Pie ", false));
         dataModels.add(new DataModel("Eat Banana Bread", false));
         dataModels.add(new DataModel("Eat Cupcake", false));
         dataModels.add(new DataModel("Eat Donut", false));

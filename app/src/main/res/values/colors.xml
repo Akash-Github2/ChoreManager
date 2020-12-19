@@ -8,4 +8,6 @@
     <color name="colorAccentRed">#fc4d55</color>
     <color name="colorAccentYellow">#ffc107</color>
     <color name="colorAccentLightBlue">#cce7ff</color>
+
+    <color name="colorBlackText">#000</color>
 </resources>
