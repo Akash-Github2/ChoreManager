@@ -54,7 +54,7 @@ public class home extends Fragment {
         dataModels = new ArrayList<>();
 
         String[] DOTW = {"stringTodayDOTW" , "TUE", "WED", "THU", "FRI", "SAT", "SUN"};
-        String[] dates = {"1","2","3","4","5","6"};
+        String[] dates = {"1","2","3","4","5","6","7"};
 
         //String[] date = {getDate(0), getDate(1), getDate(2), getDate(3), getDate(4), getDate(5), getDate(6)};
 
