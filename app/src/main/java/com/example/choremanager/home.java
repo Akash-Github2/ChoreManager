@@ -17,6 +17,10 @@ import java.util.ArrayList;
 
 public class home extends Fragment {
 
+    ArrayList dataModels;
+    ListView listView;
+    private CustomAdapter adapter;
+
     public home() {
         //Required empty constructor
     }
@@ -25,13 +29,46 @@ public class home extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        String[] items = {"Hello", "hi"};
+        listView = (ListView) view.findViewById(R.id.listView);
 
+        dataModels = new ArrayList();
+
+        dataModels.add(new DataModel("Apple Pie", false));
+        dataModels.add(new DataModel("Banana Bread", false));
+        dataModels.add(new DataModel("Cupcake", false));
+        dataModels.add(new DataModel("Donut", true));
+        dataModels.add(new DataModel("Eclair", true));
+        dataModels.add(new DataModel("Froyo", true));
+        dataModels.add(new DataModel("Gingerbread", true));
+        dataModels.add(new DataModel("Honeycomb", false));
+        dataModels.add(new DataModel("Ice Cream Sandwich", false));
+        dataModels.add(new DataModel("Jelly Bean", false));
+        dataModels.add(new DataModel("Kitkat", false));
+        dataModels.add(new DataModel("Lollipop", false));
+        dataModels.add(new DataModel("Marshmallow", false));
+        dataModels.add(new DataModel("Nougat", false));
+
+        adapter = new CustomAdapter(dataModels, getContext());
+
+        listView.setAdapter(adapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView parent, View view, int position, long id) {
+
+                DataModel dataModel= dataModels.get(position);
+                dataModel.checked = !dataModel.checked;
+                adapter.notifyDataSetChanged();
+
+
+            }
+        });
+
+        /*
+        String[] items = {"Do the Dishes Akash!", "drink sum Dasani"};
         ListView listView = (ListView) view.findViewById(R.id.listView);
-
         ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(getActivity(),android.R.layout.simple_list_item_1, items);
-
         listView.setAdapter(itemsAdapter);
+         */
 
         return view;
     }

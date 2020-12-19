@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
                 //Set checked testing fragment
                 bottomNavigationView.getMenu().getItem(3).setChecked(true);
                 //Return testing fragment
-                return new testing();
+                return new addChore();
         }
         //Set checked default home fragment
         bottomNavigationView.getMenu().getItem(1).setChecked(true);
