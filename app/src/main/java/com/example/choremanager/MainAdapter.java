@@ -56,6 +56,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
         TextView DOTWTextView;
         LinearLayout fullDateItem;
         TextView dateTextView;
+        home homeView = new home();
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -65,9 +66,16 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
             fullDateItem = itemView.findViewById(R.id.dateView);
         }
         void bindItem(int pos) {
-            MainModel txt = mainModels.get(pos);
+            //MainModel txt = mainModels.get(pos);
             if(indexOfColoredItem==pos){
                 fullDateItem.setBackground(ContextCompat.getDrawable(context, R.drawable.layout_selected_bg));
+                if(indexOfColoredItem==1){
+                    homeView.setTextToTommorow();
+                }else if(indexOfColoredItem>1){
+                    homeView.setTextToDayOfTheWeek(indexOfColoredItem);
+                }else{
+                    homeView.setTextToToday();
+                }
             } else{
                 fullDateItem.setBackground(ContextCompat.getDrawable(context, R.drawable.layout_unselected_bg));
             }
