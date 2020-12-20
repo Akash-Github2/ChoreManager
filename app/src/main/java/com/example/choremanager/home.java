@@ -54,9 +54,8 @@ public class home extends Fragment {
         dayTitle = view.findViewById(R.id.dayTitle);
         recyclerView = view.findViewById(R.id.horizontalRecyclerView);
         dataModels = new ArrayList<>();
-        String stringTodayDOTW = (todayDOW.getDisplayName(TextStyle.SHORT, Locale.ENGLISH)).toUpperCase();
 
-
+        setTextToDayOfTheWeek(2);
         String[] DOTW = {getDOTWAbreviated(0) ,getDOTWAbreviated(1), getDOTWAbreviated(2), getDOTWAbreviated(3), getDOTWAbreviated(4), getDOTWAbreviated(5), getDOTWAbreviated(6)};
         String[] dates = {getDate(0), getDate(1), getDate(2), getDate(3), getDate(4), getDate(5), getDate(6)};
 
@@ -180,11 +179,10 @@ public class home extends Fragment {
         recyclerView.setAdapter(mainAdapter);
     }
 
-    public void setTextToTommorow(){
-        dayTitle.setText(R.string.Tomorrow);
-    }
     public void setTextToToday(){
         dayTitle.setText(R.string.Today);
+    }
+    public void setTextToTommorow() { dayTitle.setText(R.string.Tomorrow);
     }
     public void setTextToDayOfTheWeek(int numDaysPastTommorow){
         dayTitle.setText(getDOTW(numDaysPastTommorow));

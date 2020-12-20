@@ -70,11 +70,11 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
             if(indexOfColoredItem==pos){
                 fullDateItem.setBackground(ContextCompat.getDrawable(context, R.drawable.layout_selected_bg));
                 if(indexOfColoredItem==1){
-                    homeView.setTextToTommorow();
+                    //homeView.setTextToTommorow();
                 }else if(indexOfColoredItem>1){
-                    homeView.setTextToDayOfTheWeek(indexOfColoredItem);
+                    //homeView.setTextToDayOfTheWeek(indexOfColoredItem);
                 }else{
-                    homeView.setTextToToday();
+                    //homeView.setTextToToday();
                 }
             } else{
                 fullDateItem.setBackground(ContextCompat.getDrawable(context, R.drawable.layout_unselected_bg));
