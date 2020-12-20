@@ -14,8 +14,7 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 public class MainActivity extends AppCompatActivity {
-    //Initalize variable
-    //File choreData = new File(context.getFilesDir(), chore);
+    //Initalize variabl
     BottomNavigationView bottomNavigationView;
     Deque<Integer> integerDeque = new ArrayDeque<>(4);
     boolean flag = true;

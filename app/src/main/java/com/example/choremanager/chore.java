@@ -1,5 +1,6 @@
 package com.example.choremanager;
 
+import java.io.File;
 import java.util.Date;
 
 public class chore {
@@ -16,6 +17,13 @@ public class chore {
         this.choreDescription = choreDescription;
         this.isCompleted = isCompleted;
     }
+
+    String dueDate = "" + dueTimeDate.getTime();
+    String createDate = "" + createdTimeDate.getTime();
+    String completed = "" + isCompleted;
+    String together = dueDate + "###" + createDate + "###" + choreTitle + "###" +  choreDescription + "###" + completed;
+
+    public File choreData = new File(context.getFilesDir(), together);
 
     public boolean isCompleted() {
         return isCompleted;
