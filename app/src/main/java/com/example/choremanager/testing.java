@@ -29,7 +29,7 @@ public class testing extends Fragment {
     }
 
     //TODO: Parse data from chore Class
-    Scanner scanner = new Scanner(choreData);
+    //Scanner scanner = new Scanner(choreData);
 
     /**
      * Use this factory method to create a new instance of

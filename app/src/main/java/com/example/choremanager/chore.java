@@ -23,7 +23,7 @@ public class chore {
     String completed = "" + isCompleted;
     String together = dueDate + "###" + createDate + "###" + choreTitle + "###" +  choreDescription + "###" + completed;
 
-    public File choreData = new File(context.getFilesDir(), together);
+    //public File choreData = new File(context.getFilesDir(), together);
 
     public boolean isCompleted() {
         return isCompleted;
